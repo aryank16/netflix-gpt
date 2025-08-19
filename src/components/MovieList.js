@@ -2,7 +2,7 @@ import React from 'react'
 import MovieCard from './MovieCard'
 
 const MovieList = ({title,movies}) => {
-    console.log(title)
+    
 
     if (!movies || movies.length === 0) {
     return null // or a loading spinner / placeholder
