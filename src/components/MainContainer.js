@@ -21,7 +21,7 @@ const MainContainer = () => {
       <VideoTitle title={original_title} overview={overview} />
 
      
-        <VideoBackground movieId={id}/>
+      <VideoBackground movieId={id}/>
         
        
    
@@ -31,3 +31,5 @@ const MainContainer = () => {
 }
 
 export default MainContainer
+
+

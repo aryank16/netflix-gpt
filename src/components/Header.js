@@ -69,11 +69,13 @@ const Header = () => {
        className='w-44' 
        src={LOGO}
        alt='logo'/>
+
+     
       {user && 
       
       <div className='flex p-2'>
        { showGptSearch &&(
-        <select className='p-2 m-2 bg-gray-700 text-white' onChange={handleLanguageChange}>
+        <select className='p-2 m-2 bg-gray-700 text-white rounded-lg' onChange={handleLanguageChange}>
           {SUPPORTED_LANGUAGES.map((lang =>
             <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>
 
@@ -82,8 +84,9 @@ const Header = () => {
       )}
 
        
-       <button onClick={handleGptSearchClick} className='bg-purple-500 px-4 py-2 mx-4 my-2 text-white rounded-lg'>
+         <button onClick={handleGptSearchClick} className='bg-red-600 px-4 py-1 mx-14 my-2 text-white rounded-lg'>
         {showGptSearch ? "Home":"GPT search"}</button>
+
 
        <div className='flex p-2'>
         <img className='w-12 h-12' alt='user icon' src={user?.photoURL}/>
